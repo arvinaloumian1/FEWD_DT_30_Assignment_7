@@ -6,7 +6,14 @@ $(document).ready(function(){
 var hicon= document.getElementById("menu-icon");
 
 hicon.onclick=function(){
- $('#nav-div').css('display','block');    
+	var state=$('#nav-div').css('display');
+	if (state!='block') {
+ 			$('#nav-div').css('display','block');    
+		}
+	else{
+		$('#nav-div').css('display','none');  
+	}
+
 }
 
         
