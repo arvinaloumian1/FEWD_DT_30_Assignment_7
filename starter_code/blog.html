@@ -10,25 +10,32 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="container">
+			<div class="container-header-blog clearfix">
+				<div id="header-h1" class="clearfix">
 				<h1 class="logo">Relaxr</h1>
+				</div>
+				<div id="nav-div" class="clearfix">
 				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="blog.html">Blog</a></li>
+					<ul>				
+						<li class="clearfix"><a href="index.html">Home</a></li>
+						<li class="clearfix"><a href="#">About</a></li>
+						<li class="clearfix"><a href="#">Contact</a></li>
+						<li class="clearfix"><a href="blog.html">Blog</a></li>
 					</ul>
 				</nav>
+				</div>
+				<div id="menu-icon">
+					<img src="images/Fw.png">
+				</div>
+
 			</div>
 		</header>
-		<section id="main">
-			<div class="container">
-				<section id="posts">
+		<section id="main-blog">		 
+				<div id="posts" class="clearfix">
 					<article class="post">
 						<h2><a href="#">How I implemented Relaxr in 2 weeks and changed my life.</a></h2>
 						<img src="images/blog_photo1.jpg" alt="Crew Meet">
@@ -43,8 +50,8 @@
 
 						<p class="readmore"><a href="#">Read more &gt;</a></p>
 					</article>
-				</section><!--
-			--><aside id="sidebar">
+				</div> 
+			 <div id="sidebar" class="clearfix">
 					<h3>Categories</h3>
 					<ul>
 						<li><a href="#">Success stories</a></li>
@@ -57,8 +64,7 @@
 					<p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<br>
 					<a href="">Learn More</a></p>
 					<img src="images/ad-unit.png" alt="Ad Unit">
-				</aside>
-			</div>
+				</div>			 
 		</section>
 
 		<aside id="bottom-cta">
@@ -74,5 +80,6 @@
 
 			<p class="copyright">Copyright 2015. Relaxr.</p>
 		</footer>
+		 <script src="js/script.js"></script>
 	</body>
 </html>
